@@ -1,0 +1,27 @@
+.parent{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+}
+.meal-container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 10px;
+margin-left: 20px;
+}
+.cart{
+    background-color: rgba(255, 224, 179, 1);
+    position: sticky;
+    top: 0;
+}
+@media screen and (max-width:456px) {
+    .parent{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .meal-container{
+        display: block;
+    }
+
+}
